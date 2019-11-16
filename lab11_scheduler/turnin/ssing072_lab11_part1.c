@@ -1,5 +1,7 @@
 #include <avr/io.h>
-#include <avr/interrupt.h>
+#ifdef _SIMULATE_
+#include "simAVRHeader.h"
+#endif
 #include "keypad.h"
 #include "timer.h"
 #include "io.h"
